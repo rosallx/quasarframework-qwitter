@@ -35,7 +35,17 @@
     </q-drawer>
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
-      
+       <q-input 
+       placeholder="Search Qwitter"
+       class="q-ma-md"
+       outlined
+       rounded
+       dense
+       >
+        <template v-slot:prepend>
+          <q-icon name="saerch" />
+        </template>
+      </q-input>
     </q-drawer>
 
     <q-page-container>
